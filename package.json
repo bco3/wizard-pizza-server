@@ -1,6 +1,6 @@
 {
   "name": "server",
-  "homepage": "https://bco3.github.io/wizard-pizza-server",
+  "homepage": "wizard-pizza-server-production.up.railway.app",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
