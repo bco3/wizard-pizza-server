@@ -8,7 +8,11 @@ const port = 5620;
 // import config from "./config.js";
 
 const db = connection;
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://bco3.github.io/wizard-pizza-client/",
+  })
+);
 app.use(express.json());
 
 // const db = mysql.createPool({
