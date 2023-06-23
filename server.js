@@ -4,7 +4,7 @@ const app = express();
 const mysql = require("mysql");
 const bodyParser = require("body-parser");
 const connection = require("./config");
-const port = 5620;
+const port = process.env.MYSQLPORT || 5620;
 // import config from "./config.js";
 
 const db = connection;
@@ -230,6 +230,6 @@ app.get("/promos", (req, res) => {
 
 // app.listen(4000);
 
-app.listen(port, "0.0.0.0", () => {
+app.listen(port, () => {
   console.log(`Listening on port ${port}`);
 });
