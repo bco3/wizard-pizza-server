@@ -3,10 +3,11 @@ const cors = require("cors");
 const app = express();
 const mysql = require("mysql");
 const bodyParser = require("body-parser");
+const connection = require("./config");
 const port = 5620;
-import config from "./config";
+// import config from "./config.js";
 
-const db = config;
+const db = connection;
 app.use(cors());
 app.use(express.json());
 
