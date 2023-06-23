@@ -10,7 +10,7 @@ const port = 5620;
 const db = connection;
 app.use(
   cors({
-    origin: "https://bco3.github.io/wizard-pizza-client/",
+    origin: "https://bco3.github.io",
   })
 );
 app.use(express.json());
