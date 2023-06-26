@@ -230,6 +230,6 @@ app.get("/promos", (req, res) => {
 
 // app.listen(4000);
 
-app.listen(port, () => {
-  console.log(`Listening on port ${port}`);
+app.listen(port, "0.0.0.0", () => {
+  console.log(`Listening on port ${port} and host 0.0.0.0`);
 });
